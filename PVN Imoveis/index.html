@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
 	integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +13,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 	referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.css">
-    <title>PVN Imoveis</title>
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon"> 
+    <meta name="description" content="Site do corretor Pedro Veras, que trabalha na direcional">
+
+    <script src="js/script.js"></script>
+
+        <title>PVN Imoveis</title>
 </head>
 <body>
 
@@ -83,14 +88,14 @@
 </div><!--sobre-c-->
 </Section><!--sobre-->
 
-<section id="emprendimentos">
-    <h2 class="section__titulo"> Emprendimento <span class="section__titulo-destaque"> Girassol</span> </h2>
+<section id="empreendimentos">
+    <h2 class="section__titulo"> Empreendimento <span class="section__titulo-destaque"> Direcional</span> </h2>
 
 
-    <div class="emprendimentos">
-        <article class="empredimento">
-            <img src="https://direcional.com.br/wp-content/uploads/2021/06/Guarita_Olinda-Ellis_Direcional.jpg" alt="" class="emprendimento__thumb">
-            <div class="emprendimento__info">
+    <div class="empreendimentos">
+        <article class="empreendimento">
+            <img src="https://direcional.com.br/wp-content/uploads/2021/06/Guarita_Olinda-Ellis_Direcional.jpg" alt="" class="empreendimento__thumb">
+            <div class="empreendimento__info">
                 <div class="info-header">
                     <h3 class="info-header__titulo"> Olinda Ellis</h3>
                     <p class="info-header__local"></p>
@@ -110,9 +115,9 @@
 
         </article>
 
-        <article class="empredimento">
-            <img src="https://direcional.com.br/wp-content/uploads/2021/06/PIQUENIQUE_CONQUISTA-GIRASSOL_DIRECIONAL-332x220_c.jpg" alt="Conquista Jardins" class="emprendimento__thumb">
-            <div class="emprendimento__info">
+        <article class="empreendimento">
+            <img src="https://direcional.com.br/wp-content/uploads/2021/06/PIQUENIQUE_CONQUISTA-GIRASSOL_DIRECIONAL-332x220_c.jpg" alt="Conquista Jardins" class="empreendimento__thumb">
+            <div class="empreendimento__info">
                 <div class="info-header">
                     <h3 class="info-header__titulo"> Conquista Jardins</h3>
                     <p class="info-header__local"></p>
@@ -132,9 +137,9 @@
 
         </article>
 
-        <article class="empredimento">
-            <img src="https://direcional.com.br/wp-content/uploads/2021/06/FITNESS-EXTERNO_CONQUISTA-GIRASSOL_DIRECIONAL-332x220_c.jpg" alt="Conquista Jardins" class="emprendimento__thumb">
-            <div class="emprendimento__info">
+        <article class="empreendimento">
+            <img src="https://direcional.com.br/wp-content/uploads/2021/06/FITNESS-EXTERNO_CONQUISTA-GIRASSOL_DIRECIONAL-332x220_c.jpg" alt="Conquista Jardins" class="empreendimento__thumb">
+            <div class="empreendimento__info">
                 <div class="info-header">
                     <h3 class="info-header__titulo"> Conquista Girassol</h3>
                     <p class="info-header__local"></p>
@@ -154,9 +159,9 @@
 
         </article>
 
-        <article class="empredimento">
-            <img src="https://direcional.com.br/wp-content/uploads/2021/06/PISCINA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="emprendimento__thumb">
-            <div class="emprendimento__info">
+        <article class="empreendimento">
+            <img src="https://direcional.com.br/wp-content/uploads/2021/06/PISCINA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="empreendimento__thumb">
+            <div class="empreendimento__info">
                 <div class="info-header">
                     <h3 class="info-header__titulo"> Viva Vida Recanto</h3>
                     <p class="info-header__local"></p>
@@ -178,7 +183,105 @@
 
 </section><!--emprendimentos-->
 
+<section> 
+    <div class="newsletter-c">
+        
+        <div class="newsletter-info">
+            <h2 class="newsletter-info_titulo">Me chame no Whatsapp e marque uma visita no stand comigo!</h2>
+            <br>
+            <p class="newsletter-info_descrição">Cadastre-se para receber nossas novidades e ofertas</p>
 
-    <script src="js/scripts.js"></script>
+                <button type="submit" class="newsletter-form_sumit" onclick="chamarWhatsapp()">Meu Whatsapp</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<section class="galeria" id="galeria">
+    
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/GUARITA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Conquista Girassol </h4>
+    </article>
+
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/GUARITA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Olinda Ellis </h4>
+    </article>
+
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/GUARITA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Viva Vida moinho </h4>
+    </article>
+
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/GUARITA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Conquista Jardins </h4>
+    </article>
+
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/GUARITA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Conquista Viva Vida recanto </h4>
+    </article>
+
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/PRACA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Conquista Girassol </h4>
+    </article>
+
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/PRACA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Conquista Girassol </h4>
+    </article>
+
+    <article class="galeria-item">
+        <img src="https://direcional.com.br/wp-content/uploads/2021/06/PRACA_VV-MOINHO_DIRECIONAL-332x220_c.jpg" alt="" class="galeria-item_thumb">
+        <h4 class="galeria-item_local"> Conquista Girassol </h4>
+    </article>
+
+</section>
+
+<footer>
+    <ul class="footer-list">
+        <li class="footer-list_item">
+            <a href="#home" class="footer-list_link">Home</a>
+        </li>
+
+        <li class="footer-list_item">
+            <a href="#sobre" class="footer-list_link">Sobre</a>
+        </li>
+
+        <li class="footer-list_item">
+            <a href="#empreendimentos" class="footer-list_link">Empreendimentos</a>
+        </li>
+
+        <li class="footer-list_item">
+            <a href="#galeria" class="footer-list_link">Galeria</a>
+        </li>
+
+        <ul class="footer-icons">
+            <li>
+                <a href="https://www.google.com/" target="_blank" class="footer-icons_icon"></a>
+                <i class="fab fa-instagram"></i>
+            </li>
+
+            <li>
+                <a href="https://www.google.com/" target="_blank" class="footer-icons_icon"></a>
+                <i class="fab fa-instagram"></i>
+            </li>
+
+            <li>
+                <a href="https://www.google.com/" target="_blank" class="footer-icons_icon"></a>
+                <i class="fab fa-twitter"></i>
+            </li>
+
+        </ul>
+    </ul>
+
+    <p class="copyright"> Copyright &copy;  PVN Imoveis <span class="date">2021.</span> Todos os direitos reservados </p>
+</footer>
+
+    
 </body>
 </html>

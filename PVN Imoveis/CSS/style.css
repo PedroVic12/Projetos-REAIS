@@ -26,9 +26,9 @@
 	--clr-medium-green: #88CC11;
 	--clr-dark-green: 	#456809;
 	
-	--spacing: 0.25rem;
-	--transition: all 0.2s linear;
-	--dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+	--spacing: 0.23rem;
+	--transition: all 0.3s linear;
+	--dark-shadow: 0 .6rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
 
@@ -86,6 +86,7 @@ section{
 img{
     max-width: 100%;
     height: auto;
+    display: block;
 }
 /**********************************/
 /* 2. Navbar
@@ -98,19 +99,24 @@ img{
     padding: 1.0rem;
     box-shadow: var(--dark-shadow);
     z-index: 3;
-    margin-top: -16px;
+    margin-top: -10px;
+    
 }
 
 .navbar-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
-.navbar-header img{
+.navbar-header_logo{
     width: 50%;
     margin-left: -22px;
     object-fit: cover;
+    margin-top: -15px;
+    
 }
 
 .navbar-header__toggle{
@@ -150,7 +156,7 @@ img{
 }
 
 .navbar-list--show-link{
-    height: 25rem;
+    height: 20rem;
 }
 
 .navbar-icons{
@@ -160,7 +166,7 @@ img{
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 924px) {
     .navbar-header{
         display: inline;
         width: 280px;
@@ -218,12 +224,13 @@ img{
 .hero{
     position: relative;
     min-height: 100vh; 
+    
 }
 
 .hero__video{
     position: absolute;
     width: 100%;
-    height: 52%;
+    height: 50.25%;
     object-fit: contain;
     
 }
@@ -277,9 +284,11 @@ img{
     letter-spacing: .6rem;
 }
 
+
 @media screen and (min-width: 768px){
     .hero__video{
        margin-top: 100px;
+       width: 100%;
 }
 
 .hero-texto{
@@ -298,14 +307,15 @@ img{
         font-size: 2.2rem;
         
     }
+
     .hero__video{
-        margin-top: -1px;
+        margin-top: 90px;
         width: 100%;
-        object-fit: cover;
+        
     } 
     .hero-texto__titulo{
     font-size: 4.2rem;
-    margin-top: -90px;
+    margin-top: -50px;
 }
 
     .hero-texto__titulo--linha-2{
@@ -330,7 +340,11 @@ img{
     display: block;
 }
 
+.sobre-c__img{
+    height: min(360px);
+    margin-left: 50px;
 
+}
 @media screen and (min-width:768px) {
     .sobre-c{
         display: flex;
@@ -342,26 +356,14 @@ img{
         flex: 6 1 1rem;
         margin-left: 1.5rem;
     }
-    .sobre-c__img{
-        width:20%;
-        object-fit: cover;
-        flex: 1 1 1rem;
-        margin-right: 1.5rem;
-    }
 }
-
-
-/**********************************/
-/* 5. Diferenciais
-/**********************************/
-
 
 
 /**********************************/
 /* 6. Pacotes 
 /**********************************/
 
-.emprendimentos{
+.empreendimentos{
     display: flex;
     position: relative;
     overflow-x: auto;
@@ -371,14 +373,14 @@ img{
     font-size: 1.8rem;
 }
 
-.emprendimentos::after{
+.empreendimentos::after{
     content: "➔";
     position: relative;
     font-size: 3.6rem;
     font-weight: 900;
     color: red;
     top: .5rem;
-    right: 57rem;
+    right: 65rem;
     animation:arrow .5s ease-in 0s infinite alternate
     
 }
@@ -386,30 +388,30 @@ img{
 
 @keyframes arrow {
     from{
-        right: 57rem
+        right: 65rem
     }
 
     to{
-        right: 55rem
+        right: 66.5rem
     }
     
 }
 
 
-.empredimento{
+.empreendimento{
     flex-shrink: 0;
     background: var(--clr-light-green);
-    max-width: 15rem;
+    max-width: 280px;
     cursor: pointer;
     box-shadow: var(--dark-shadow);
 }
 
-.empredimento + .empredimento{
+.empreendimento + .empreendimento{
     margin-left: 3rem;
 }
 
-.emprendimento__info{
-    padding: 1.6rem;
+.empreendimento__info{
+    padding: 1.0rem;
 
 }
 
@@ -420,8 +422,8 @@ img{
 }
 
 .info-header__titulo{
-    font-size: 2.4rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 1000;
 }
 
 .info-body{
@@ -435,9 +437,104 @@ img{
     align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+        .empreendimentos {
+            flex-wrap: wrap; 
+            justify-content: space-around;
+            overflow: visible;
+            padding-bottom: 3.2rem;
+        }
+
+        .empreendimento:hover{
+            transform: scale(1.06);
+        }
+
+        .empreendimentos::after{
+            content: "";
+        }
+
+        .empreendimento + .empreendimento{
+            margin: 0;
+        }
+
+        .empreendimento:nth-child(n+3){
+            margin-top: 3rem;
+            margin-left: 2rem;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .empreendimento:nth-child(n+3){
+        margin-top: 0;
+    }
+
+    .empreendimento:nth-child(n+4){
+        margin-top: 3rem;
+    }
+  
+}
+
+@media screen and (min-width: 1440px){
+    .empreendimento + .empreendimento{
+        margin: 0;
+    }
+}
+
+
 /**********************************/
 /* 7. Newsletter
 /**********************************/
+.newsletter-c{
+    padding: 3rem 0;
+}
+
+.newsletter-info_titulo{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.newsletter-info_descrição{
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: .9;
+    margin-bottom: .8rem;
+}
+
+
+.newsletter-form_sumit{
+    font-size: 1.0rem;
+    font-weight: 60;
+    text-transform: uppercase;
+    background-color: var(--clr-medium-green);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 50px;
+    letter-spacing: .1rem;
+    padding: 1.0rem;
+    transition: var(--transition);
+
+
+}
+
+.newsletter-form_sumit:hover{
+    letter-spacing: .3rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    .newsletter-c{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsletter-info, .newsletter-form{
+        flex: 1 1 26rem;
+    }
+
+}
 
 
 
@@ -445,14 +542,131 @@ img{
 /* 8. Galeria
 /**********************************/
 
+.galeria{
+    padding: 0;
+    margin-left: 15px;
+}
+
+.galeria-item{
+    position: relative;
+    min-width: 15rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.galeria-item_thumb{
+    transition: --var(--transition);
+}
+
+.galeria-item::before{
+    content: "";
+    position: absolute;
+    background: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.galeria-item_local{
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 600;
+    left: 6.4rem;
+    bottom: 3.2rem;
+    color: var(--clr-white);
+    opacity: 0;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.galeria-item:hover  .galeria-item_thumb{
+    transform: scale(1.3);
+}
+
+
+.galeria-item:hover  .galeria-item_local{
+    left: 3.2rem;
+    opacity: 1;
+}
+
+.galeria-item:hover.galeria-item::before{
+    opacity: .7;
+}
+
+@media screen and (min-width: 768px){
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galeria-item{
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .galeria-item{
+        flex: 0 0 25%;
+    }
+}
 
 
 /**********************************/
 /* 9. Footer
 /**********************************/
 
+footer{
+    background: darkblue;
+    font-size: .9rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 1.0rem;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-list_link{
+    color: white;
+    padding: .4rem;
+    transition: var(--transition);
+}
+
+.footer-list_link:hover{
+    color: yellowgreen;
+}
+
+.footer-icons{
+    justify-content: center;
+    
+}
+
+.footer-icons_icon {
+    color: rgb(0, 0, 0);
+    font-size: 2.8rem;
+    transition: var(--transition);
+    margin-right: -16.6rem;
+
+}
+
+.footer-icons_icon:hover{
+    color: yellowgreen;
+}
 
 
+.date::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.copyright{
+    color: white;
+}
 /**********************************/
 /* 10. Modal
 /**********************************/
